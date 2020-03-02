@@ -1,0 +1,6 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["ri9AP"]); }
+
+__d("useCometConfirmationDialog",["requireCond","cr:947162"],(function(a,b,c,d,e,f){"use strict";e.exports=b("cr:947162")}),null);
+__d("useCometConfirmationDialogBlue",["React","SimpleXUIDialog"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=b("React").useCallback,h=b("React").useRef;a=function(){return[g(function(a,c,d){var e=a.body,f=a.confirm;a=a.title;d===void 0&&(d=function(){});return b("SimpleXUIDialog").showConfirm(e,a,function(a){return a?c():d()},{confirmBtnText:f})},[]),h(null)]};e.exports=a}),null);
+__d("CowatchingUFIConstants",[],(function(a,b,c,d,e,f){"use strict";a=Object.freeze({LIVE_FEED_MAX_SHOWN_COMMENTS:4,LIVE_FULLSCREEN_MAX_SHOWN_COMMENTS:50});e.exports=a}),null);
+__d("useLiveFeedStoryVideoTimestampBlue",["React","UFIVideoPlayerRegistry","useInterval"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=b("React").useState;a=function(a,c){__p&&__p();var d=g(0),e=d[0],f=d[1];b("useInterval")(function(){if(a==null||c.current==null)return;var d=b("UFIVideoPlayerRegistry").getAvailableVideoPlayerControllerForElement(c.current,a);if(d!=null&&d.isWatchAndScroll())return;d=b("UFIVideoPlayerRegistry").getAvailableVideoPlayerControllerTimeForElement(c.current,a);if(d==null)return;f(d)},1e3,[a,c]);return e};e.exports=a}),null);
